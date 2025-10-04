@@ -1,0 +1,179 @@
+/* Genel ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a093a, #120024);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Üst Menü */
+header {
+  width: 100%;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(18, 0, 36, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #8a4fff;
+}
+
+/* Hero Bölümü */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(160deg, #4b0082, #1a093a);
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.btn.primary {
+  background: #8a4fff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #6e3ecc;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #8a4fff;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: #8a4fff;
+}
+
+/* Komutlar Bölümü */
+.commands {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.commands h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.command-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.command-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.command-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.command-card h3 {
+  color: #8a4fff;
+  margin-bottom: 10px;
+}
+
+/* Destek Bölümü */
+.support {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(160deg, #1a093a, #4b0082);
+}
+
+.support h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b001b;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 0.9em;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+}
